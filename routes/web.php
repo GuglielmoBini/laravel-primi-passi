@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $class = '83';
+    $objects = ['mouse', 'tastiera', 'monitor-1', 'monitor-2', 'webcam', 'cuffie', 'altoparlanti', 'pc'];
+
+    return view('home', compact('class', 'objects'));
 });

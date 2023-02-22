@@ -7,6 +7,12 @@
     <title>Laravel Primi passi</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1>Hello World from class {{ $class }}</h1>
+    <h3>Setup pc desktop</h3>
+    <ul>
+        @foreach ($objects as $object)
+            <li>{{ $object }}</li>
+        @endforeach
+    </ul>
 </body>
 </html>
